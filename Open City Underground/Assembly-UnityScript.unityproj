@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{22371ED3-115E-4FED-C5DC-F2A6732C4DD8}</ProjectGuid>
+	<ProjectGuid>{B01562CE-BC09-5AD2-C324-FF6EB9772705}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_3_5_5;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_WEBPLAYER;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_IPHONE;UNITY_IPHONE_API;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;UNITY_4_1_5;UNITY_4_1;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -37,26 +37,50 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Player\FalloutDeath.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Script\EasyMobileJoystick.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Script\Menu.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Script\MenuJump.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Script\MenuMain.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Scripts\FirstPersonControl.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Scripts\FollowTransform.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Scripts\Joystick.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Scripts\MoveCamera.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Scripts\ObliqueNear.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Scripts\PlayerRelativeControl.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Scripts\RotationConstraint.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Scripts\SidescrollControl.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Scripts\SmoothFollow2D.js" />
+     <Compile Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Scripts\ZoomCamera.js" />
+     <None Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+     <None Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water3\Sources\Shaders\FX-Water3.shader" />
+     <None Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\RiverWaterVertexColor.shader" />
+     <None Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water3\Sources\Shaders\Water3Underwater.shader" />
+     <None Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+     <None Include="Assets\EasyMobileJoystick\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+     <None Include="Assets\EasyMobileJoystick\ReadMe.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\RiverWater.shader" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{F5863B09-B49F-69E1-9ACA-F3CD2DBDF82A}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{EFC74C6F-5DC7-E388-B7E9-37CAC77FE52F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{B5E0692B-91F7-EA83-7A54-16B3EC70F2C2}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{C822D0F8-88A1-A601-253C-A69F3BF04CA8}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
